@@ -1,0 +1,22 @@
+<head>
+	<script type="text/javascript">
+        function AddSearch () {
+            if (window.external && ('AddSearchProvider' in window.external)) {
+                window.external.AddSearchProvider ("bitly.xml");
+            }
+            else {
+                alert ("Your browser does not support the AddSearchProvider method!");
+            }
+        }
+	</script>
+	<link rel="search"
+		type="application/opensearchdescription+xml"
+		title="Cambridge Dictionary"
+		href="https://mike1026.github.io/SearchProviders/cambridge-Dict.xml">
+</head>
+<body>
+    <button onclick="AddSearch ()">Add search engine</button>
+    <br /><br />
+    To manage search engines, open the drop-down menu of your browser's Search Box (Firefox and Internet Explorer)
+    or select Options/Basics/Default Search/Manage (Google Chrome).
+</body>
